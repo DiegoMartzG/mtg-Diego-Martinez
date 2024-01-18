@@ -1,0 +1,41 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 30px 1fr 20px;
+    grid-template-areas: "zh zh" "zn zn" "zs zs" "zf zf";
+}
+header{
+    grid-area: zh;
+    background-color: aqua;
+
+}
+header>p{
+    text-align: center;
+    font-size: 20px;
+}
+nav{
+    grid-area: zn;
+    background-color: rgb(80, 196, 196);
+
+}
+section{
+    grid-area: zs;
+    background-color: rgb(160, 228, 228);
+
+}
+.titulo{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+.informacion{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+}
+footer{
+    grid-area: zf;
+    background-color: rgb(95, 112, 112);
+
+}
